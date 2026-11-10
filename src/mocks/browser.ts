@@ -23,7 +23,7 @@ export async function startMockBackend(): Promise<Simulator> {
   const sim = createSimulator()
   const worker = setupWorker(...sim.handlers)
   await worker.start({
-    onUnhandledRequest: 'bypass',
+    onUnhandledFrame: 'bypass',
     quiet: true,
     serviceWorker: { url: `${import.meta.env.BASE_URL}mockServiceWorker.js` },
   })

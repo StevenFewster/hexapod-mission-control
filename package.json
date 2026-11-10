@@ -11,7 +11,15 @@
     "typecheck": "tsc -b",
     "format": "prettier --write .",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "oxlint"
+    ],
+    "*.{json,jsonc,css,md,html}": "prettier --write"
   },
   "dependencies": {
     "react": "^19.3.1",
@@ -26,7 +34,9 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "husky": "^9.1.7",
     "jsdom": "^31.0.0",
+    "lint-staged": "^17.6.0",
     "msw": "^3.0.4",
     "oxlint": "^1.90.0",
     "prettier": "^3.9.10",

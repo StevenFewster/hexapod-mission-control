@@ -4,7 +4,7 @@ Update this as you go. Claude reads it at the start of every session.
 
 | #   | Chapter                        | Status      | Started | Finished | Notes |
 | --- | ------------------------------ | ----------- | ------- | -------- | ----- |
-| 0   | Launch prep                    | not started |         |          |       |
+| 0   | Launch prep                    | complete    |         |          |       |
 | 1   | Components & JSX               | not started |         |          |       |
 | 2   | State, events & effects        | not started |         |          |       |
 | 3   | Design system                  | not started |         |          |       |
@@ -37,6 +37,7 @@ later chapters.
 Places where an installed library's API differed from a chapter brief.
 
 - Used oxlint rather than eslint so didn't add the prettier configs to it
+- msw version issue, had to change browser.ts onUnhandledRequest with onUnhandledFrame
 
 *
 

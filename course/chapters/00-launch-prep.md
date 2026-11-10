@@ -12,14 +12,14 @@ the simulator's own test suite (17 passing) plus your first component test.
 
 ## Angular bridge
 
-| Angular CLI | Here |
-|---|---|
-| `ng new` | `npm create vite@latest` (React has no official CLI; Vite is the de-facto standard for SPAs) |
-| `angular.json` | `vite.config.ts` (much smaller) |
-| `main.ts` + `bootstrapApplication(AppComponent)` | `main.tsx` + `createRoot(el).render(<App />)` |
-| `AppComponent` | `App.tsx`, just a function |
-| Karma/Jasmine | Vitest + Testing Library |
-| `ng lint` | ESLint (flat config) |
+| Angular CLI                                      | Here                                                                                         |
+| ------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| `ng new`                                         | `npm create vite@latest` (React has no official CLI; Vite is the de-facto standard for SPAs) |
+| `angular.json`                                   | `vite.config.ts` (much smaller)                                                              |
+| `main.ts` + `bootstrapApplication(AppComponent)` | `main.tsx` + `createRoot(el).render(<App />)`                                                |
+| `AppComponent`                                   | `App.tsx`, just a function                                                                   |
+| Karma/Jasmine                                    | Vitest + Testing Library                                                                     |
+| `ng lint`                                        | ESLint (flat config)                                                                         |
 
 **Where it breaks down:** there's no framework-wide "way" of doing things. Routing, data,
 forms and styling are all libraries you choose. This course chooses for you, and explains the
@@ -124,14 +124,14 @@ async function bootstrap() {
 void bootstrap()
 ```
 
-> We start MSW in production builds too, on purpose. The simulator *is* this app's backend, and
+> We start MSW in production builds too, on purpose. The simulator _is_ this app's backend, and
 > it's what makes the public demo work with no server (chapter 15).
 
 **Check:** reload. In the browser console:
 
 ```js
-await (await fetch('/api/robots')).json()   // six robots
-__sim.world.trigger('fault')                 // break something
+await (await fetch('/api/robots')).json() // six robots
+__sim.world.trigger('fault') // break something
 await (await fetch('/api/events?limit=3')).json()
 ```
 
@@ -205,11 +205,11 @@ before each commit.
 
 ## Definition of done
 
-- [ ] `npm run dev` shows the heading; console shows the simulator online
-- [ ] `npm run typecheck`, `npm run lint`, `npm run test:run` all pass with zero warnings
-- [ ] `@/` alias works in both Vite and TypeScript
-- [ ] You can explain what StrictMode is doing when things log twice
-- [ ] Pushed to GitHub
+- [x] `npm run dev` shows the heading; console shows the simulator online
+- [x] `npm run typecheck`, `npm run lint`, `npm run test:run` all pass with zero warnings
+- [x] `@/` alias works in both Vite and TypeScript
+- [x] You can explain what StrictMode is doing when things log twice
+- [x] Pushed to GitHub
 
 ## Review questions
 
@@ -222,7 +222,7 @@ before each commit.
 
 ## Stretch
 
-- Read the first three pages of react.dev → *Learn* → *Describing the UI*. You'll fly through
+- Read the first three pages of react.dev → _Learn_ → _Describing the UI_. You'll fly through
   them, but the vocabulary is the one Claude will use.
 - Install the **React Developer Tools** browser extension and find the `App` component in the
   Components tab.
