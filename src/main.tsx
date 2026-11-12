@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { startMockBackend } from './mocks/browser.ts'
 
-async function boostrap() {
+async function bootstrap() {
   await startMockBackend()
   createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -12,4 +12,4 @@ async function boostrap() {
     </StrictMode>,
   )
 }
-void boostrap()
+void bootstrap()

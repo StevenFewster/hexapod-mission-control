@@ -1,8 +1,7 @@
 function App() {
-  console.log('App rendered')
   return (
     <>
-      <h1>Hexapod Mission Control</h1>
+      <h1 className="text-live font-mono">Hexapod Mission Control</h1>
     </>
   )
 }
