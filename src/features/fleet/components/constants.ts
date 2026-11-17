@@ -8,3 +8,10 @@ export const STATUS_TEXT_TONES: Record<Tone, string> = {
   ok: 'text-ok',
   danger: 'text-danger',
 }
+export const BATTERY_BG_TONES: Record<Tone, string> = {
+  idle: 'bg-idle',
+  live: 'bg-live',
+  caution: 'bg-caution',
+  ok: 'bg-ok',
+  danger: 'bg-danger',
+}
