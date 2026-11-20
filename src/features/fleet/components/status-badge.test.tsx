@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { expect, test } from 'vitest'
-import type { RobotStatus } from './types'
+import type { RobotStatus } from '../types'
 import { StatusBadge } from './status-badge'
 
 test.each([

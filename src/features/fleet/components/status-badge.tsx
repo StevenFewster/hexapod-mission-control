@@ -1,5 +1,5 @@
 import type { ComponentProps } from 'react'
-import type { RobotStatus, Tone } from './types'
+import type { RobotStatus, Tone } from '../types'
 import { Circle, House, Pause, Play, TriangleAlert, WifiOff, Zap } from 'lucide-react'
 import { cn } from '@/lib/cn'
 import { STATUS_TEXT_TONES } from './constants'

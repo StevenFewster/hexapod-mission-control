@@ -1,7 +1,7 @@
 import { cn } from '@/lib/cn'
 import { formatPercentage } from '@/lib/format'
 import type { ComponentProps } from 'react'
-import type { Tone } from './types'
+import type { Tone } from '../types'
 import { BATTERY_BG_TONES } from './constants'
 
 function getMeterColorAndStatus(level: number) {
